@@ -30,11 +30,18 @@ body.dark{--bg:#0f172a;--text:#f8fafc;--card:#1e293b;--shadow:rgba(0,0,0,.4);}
 .hero-content{position:relative;color:#fff;text-align:center;opacity:0;transform:translateY(50px);}
 .hero-animate{animation:heroSlide 1s forwards;}
 @keyframes heroSlide{to{opacity:1;transform:translateY(0);}}
-.hero-logo{
-  width:260px;
-  max-width:80%;
-  margin-bottom:20px;
+.hero-logo {
+  width: 180px; /* obecny rozmiar dla telefonów */
+  margin-bottom: 20px;
 }
+
+/* Większe logo na komputerach */
+@media screen and (min-width: 768px) {
+  .hero-logo {
+    width: 250px; /* możesz dostosować */
+  }
+}
+
 .hero a{display:inline-block;margin-top:30px;padding:15px 40px;background:var(--primary);border-radius:40px;text-decoration:none;color:#020617;font-weight:600;transition:.3s;}
 .hero a:hover{transform:scale(1.05);background:var(--primary-hover);}
 
@@ -285,6 +292,7 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 
 </body>
 </html>
+
 
 
 
