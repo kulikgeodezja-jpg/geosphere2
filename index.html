@@ -181,8 +181,12 @@ a{color:var(--primary);text-decoration:none;}
     <input type="text" name="dzialka" placeholder="Numer działki">
     <textarea name="komentarz" placeholder="Komentarz"></textarea>
     <input type="email" name="email" placeholder="Email kontaktowy" required>
+    <label>
+      <input type="checkbox" name="zgoda_prywatnosc" required>
+      <a href="https://geosphere.pl/privacy.html" target="_blank">Akceptuję politykę prywatności</a>
+    </label>
+<button>Wyślij zapytanie</button>
 
-    <button>Wyślij zapytanie</button>
   </form>
 
   <div class="map">
@@ -294,6 +298,7 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 
 </body>
 </html>
+
 
 
 
